@@ -1,0 +1,284 @@
+* {
+  margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+:root {
+  --color-primario: rgb(255, 255, 255); 
+  --color-secundario: rgb(0, 0, 0);
+  --color-terciario: rgb(229, 0, 19);
+  }
+
+body{
+  background-color: var(--color-primario);
+  font-size: 14px;
+}
+
+h2{
+  font-size: 2.8em;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+
+h3{
+  font-size: 2.4em;
+  margin-bottom: -136px;
+  font-weight: bold;
+  color: var(--color-secundario);
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 85%;
+  max-width: 1700px;
+  margin: auto;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+nav {
+  padding: 24px;
+  display: flex;
+}
+
+
+nav ul li {
+  display: inline;
+  padding: 24px;
+}
+
+nav ul li a{
+  font-size: 1.2em;
+  color: var(--color-secundario);
+  border-radius: 10px;
+}
+
+nav ul li a:hover{
+  color: var(--color-terciario);
+  text-decoration: underline;
+}
+
+.container.intro-pagina{
+  padding: 4em 0;
+}
+
+article.introduccion {
+  padding: 24px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+article.introduccion p{
+  font-size: 1.3em;
+  color: var(--color-secundario);
+}
+
+article.introduccion.logo-toshiba{
+  text-align: center;
+}
+
+article.introduccion.logo-toshiba img{
+  width: 100%;
+  max-width: 70%;
+  margin: auto;
+}
+section.bg_usos-logos{
+  background-color: #333333;
+}
+.container.txt-logos{
+  padding: 4em 0 2em 0;
+  color: var(--color-primario);
+}
+
+.container.txt-logos p{
+  font-size: 1.2em;
+}
+
+.container.logos-toshiba{
+  padding-bottom: 2em;
+}
+
+section article.uso-logos {
+  padding: 24px;
+  flex-grow: 1;
+  flex-basis: 0;
+  text-align: center;
+}
+
+.img-logo_t {
+  width: 80%;
+  border-radius: 9px;
+}
+
+footer{
+  background-color: #6d2727;
+  padding: 2em 0;
+}
+
+footer .container{
+  align-items: flex-start;
+}
+
+.redes ul{
+  margin-top: 12em;
+}
+
+.redes ul li {
+  display: inline;
+  padding: 1.5em;
+}
+
+.redes ul li img{
+  width: 35px;
+
+}
+
+article.bloque-footer {
+  padding: 2em;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.secciones-sitio{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+ul.lista-footer {
+  padding: 0.5em;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+ul.lista-footer li{
+  list-style-type: none;
+  margin-bottom: 1em;
+}
+ul.lista-footer li.titulo-lista{
+  margin-bottom: 1em;
+  color: var(--color-secundario);
+  font-size: 1.3em;
+}
+ul.lista-footer li a{
+  color: var(--color-primario);
+  font-size: 1.1em;
+}
+
+ul.lista-footer li a:hover{
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) and (max-width: 1024px)  {
+  body{
+    
+    font-size: 18px;
+  }
+  .container {
+    justify-content: center;
+    flex-direction: column;
+  }
+  nav ul li {
+    padding: 24px 6px;
+}
+  nav ul li a {
+    font-size: 0.9em;
+    color: var(--color-secundario);
+    border-radius: 10px;
+}
+.container.intro-pagina {
+  padding: 2em 0;
+}
+article.introduccion p{
+  font-size: 1.1em;
+}
+
+article.introduccion.logo-toshiba img {
+  max-width: 90%;
+}
+
+.img-logo_t {
+  width: 100%;
+}
+footer .container {
+  align-items: center;
+}
+
+.redes ul {
+  margin-top: 8em;
+  display: flex;
+  justify-content: space-around;
+}
+
+ul.lista-footer {
+  padding: 0em 0.5em;
+  flex-grow: 2;
+  flex-basis: auto;
+}
+
+}
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+  h3 {
+    
+    color: var(--color-primario);
+}
+  
+  .container {
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  nav ul li {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    text-align: center;
+
+  }
+  nav ul li a{
+    background-color: #FAEBD6;
+    padding: 0.5em 1em;
+  }
+
+  nav ul li a:hover{
+    background-color: #EDBCA7;
+    color: black;
+    text-decoration: none;
+  }
+  .container.intro-pagina {
+    padding: 1em 0;
+  }
+  section.bg_usos-logos {
+    background-color: #6d2727;
+  }
+
+  footer {
+    background-color: #333333;
+    padding: 2em 0;
+  }
+
+  footer .container {
+    align-items: center;
+  }
+
+  ul.lista-footer li.titulo-lista {
+    color: var(--color-secundario);
+    font-size: 1.2em;
+    background-color: var(--color-primario);
+    padding: 1em;
+}
+
+}
+
+
